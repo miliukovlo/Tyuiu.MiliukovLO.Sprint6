@@ -101,7 +101,7 @@
             textBoxInputx.Name = "textBoxInputx";
             textBoxInputx.Size = new Size(213, 27);
             textBoxInputx.TabIndex = 3;
-            textBoxInputx.TextChanged += textBoxInputx_TextChanged;
+            textBoxInputx.KeyPress += textBoxInputx_KeyPress;
             // 
             // groupBoxOutput
             // 

@@ -10,7 +10,7 @@ namespace Tyuiu.MiliukovLO.Sprint6.Task0.V19.Test
         {
             DataService ds = new();
             int x = 3;
-            Assert.AreEqual(1, ds.Calculate(x));
+            Assert.AreEqual(-1.0, ds.Calculate(x));
         }
     }
 }

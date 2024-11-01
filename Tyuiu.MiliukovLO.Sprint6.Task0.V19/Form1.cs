@@ -24,6 +24,8 @@ namespace Tyuiu.MiliukovLO.Sprint6.Task0.V19
             DataService ds = new();
             try
             {
+                MessageBox.Show(textBoxInputx.Text, "Check", MessageBoxButtons.OK);
+                MessageBox.Show(Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxInputx.Text))), "Check", MessageBoxButtons.OK);
                 textBoxResult.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxInputx.Text)));
             }
             catch (Exception)
@@ -32,9 +34,9 @@ namespace Tyuiu.MiliukovLO.Sprint6.Task0.V19
             }
         }
 
-        private void TextBoxInputx_TextChange(object sender, KeyPressEventArgs e)
+        private void textBoxInputx_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = true;
+            e.Handled = false;
         }
     }
 }
