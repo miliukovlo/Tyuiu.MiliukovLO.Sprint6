@@ -11,11 +11,6 @@ namespace Tyuiu.MiliukovLO.Sprint6.Task1.V28.Lib
             for (int i = 0; i < 11; i++)
             {
                 myDoubles[i] = Math.Round(Math.Cos(startValue + i) + ((4 * (startValue + i)) / 2) - Math.Sin(startValue + i) * (3 * (startValue + i)),2);
-                if (startValue + i == 0)
-                {
-                    myDoubles[i] = 0;
-                    continue;
-                }
             }
             return myDoubles;
         }
