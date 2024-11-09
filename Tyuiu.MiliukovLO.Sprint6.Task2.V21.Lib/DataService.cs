@@ -11,7 +11,7 @@ namespace Tyuiu.MiliukovLO.Sprint6.Task2.V21.Lib
             for (int i = startValue; i <= stopValue; i++)
             {
                 double complete = Math.Cos(i) + (Math.Cos(i) / (i + 2)) - 3 * i;
-                if (i == 0)
+                if (i + 2 == 0)
                 {
                     complete = 0;
                 }
