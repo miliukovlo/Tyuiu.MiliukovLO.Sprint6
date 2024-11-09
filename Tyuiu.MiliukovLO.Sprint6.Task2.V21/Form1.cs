@@ -1,3 +1,5 @@
+using Tyuiu.MiliukovLO.Sprint6.Task2.V21.Lib;
+
 namespace Tyuiu.MiliukovLO.Sprint6.Task2.V21
 {
     public partial class Form1 : Form
@@ -9,14 +11,15 @@ namespace Tyuiu.MiliukovLO.Sprint6.Task2.V21
 
         private void button1_Click(object sender, EventArgs e)
         {
-            for (int i = -5; i <= 5; i++)
+            DataService ds = new();
+            int startValue = -5;
+            int endValue = 5;
+            int index = 0;
+            double[] result = ds.GetMassFunction(startValue, endValue);
+            for (int i = startValue; i <= endValue; i++)
             {
-                double result = Math.Cos(i) + (Math.Cos(i) / (i + 2)) - 3 * i;
-                if (i == 0)
-                {
-                    result = 0;
-                }
-                this.dataGridViewOutput.Rows.Add(i, Math.Round(result, 2));
+                this.dataGridViewOutput.Rows.Add(i, Math.Round(result[index], 2));
+                index++;
             }
         }
 
