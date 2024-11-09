@@ -27,5 +27,10 @@ namespace Tyuiu.MiliukovLO.Sprint6.Task2.V21
         {
             MessageBox.Show("Программа выводит решение от -5 до 5 по заданной формуле. Милюков Леонид Олегович ИИПб-24-2", "Cправка", MessageBoxButtons.OK);
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

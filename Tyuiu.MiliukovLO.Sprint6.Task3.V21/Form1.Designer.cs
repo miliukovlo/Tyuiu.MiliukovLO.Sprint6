@@ -109,7 +109,7 @@
             Controls.Add(dataGridViewMatrix);
             Controls.Add(groupBoxConditions);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Спринт 6 | Таск 3 | Вариант 21 | ИИПб-24-2 Милюков Л.О.";
             Load += Form1_Load;
             groupBoxConditions.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewMatrix).EndInit();

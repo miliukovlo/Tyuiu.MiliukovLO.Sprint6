@@ -137,7 +137,8 @@
             Controls.Add(groupBoxInput);
             Controls.Add(groupBoxConditions);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Спринт 6 | Таск 2 | Вариант 21 | ИИПб-24-2 Милюков Л.О.";
+            Load += Form1_Load;
             groupBoxConditions.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBoxCondition).EndInit();
             groupBoxInput.ResumeLayout(false);
