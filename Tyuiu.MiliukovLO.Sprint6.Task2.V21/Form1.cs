@@ -18,7 +18,7 @@ namespace Tyuiu.MiliukovLO.Sprint6.Task2.V21
             double[] result = ds.GetMassFunction(startValue, endValue);
             for (int i = startValue; i <= endValue; i++)
             {
-                this.dataGridViewOutput.Rows.Add(i, Math.Round(result[index], 2));
+                this.dataGridViewOutput.Rows.Add(i, result[index]);
                 index++;
             }
         }

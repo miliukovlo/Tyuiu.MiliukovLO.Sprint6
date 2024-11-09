@@ -15,7 +15,7 @@ namespace Tyuiu.MiliukovLO.Sprint6.Task2.V21.Lib
                 {
                     complete = 0;
                 }
-                result[index] = complete;
+                result[index] = Math.Round(complete,2);
                 index++;
             }
             return result;
