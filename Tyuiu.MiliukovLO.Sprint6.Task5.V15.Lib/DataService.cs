@@ -12,7 +12,10 @@ namespace Tyuiu.MiliukovLO.Sprint6.Task5.V15.Lib
                 string line;
                 while ((line = sr.ReadLine()) != null)
                 {
-                    len++;
+                    if (Convert.ToDouble(line) >= 2 && Convert.ToDouble(line) <= 7)
+                    {
+                        len++;
+                    }
                 }
             }
             double[] result = new double[len];
