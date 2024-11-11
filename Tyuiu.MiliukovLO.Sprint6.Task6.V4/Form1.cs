@@ -29,7 +29,7 @@ namespace Tyuiu.MiliukovLO.Sprint6.Task6.V4
 
         private void buttonComplete_Click(object sender, EventArgs e)
         {
-            textBoxOut.Text = ds.CollectTextFromFile("n", openFilePath);
+            textBoxOut.Text = ds.CollectTextFromFile(openFilePath);
         }
     }
 }
