@@ -9,7 +9,7 @@ namespace Tyuiu.MiliukovLO.Sprint6.Task6.V4.Lib
             string[] lines = File.ReadAllLines(path);
             string text = string.Join(" ", lines);
             string[] words = text.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
-            var result = words.Where(word => word.Contains("n", StringComparison.OrdinalIgnoreCase));
+            var result = words.Where(word => word.Contains("n"));
             return string.Join(" ", result);
         }
     }
