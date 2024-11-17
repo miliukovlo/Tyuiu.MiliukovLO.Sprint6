@@ -40,14 +40,15 @@
             dataGridViewOutput = new DataGridView();
             groupBoxControl = new GroupBox();
             buttonQuestion = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            buttonDone = new Button();
+            buttonSave = new Button();
             buttonOpenFile = new Button();
             toolTip = new ToolTip(components);
-            openFileDialog1 = new OpenFileDialog();
+            openFileDialogGet = new OpenFileDialog();
             panelControl = new Panel();
             panelCondition = new Panel();
             splitter1 = new Splitter();
+            saveFileDialog1 = new SaveFileDialog();
             groupBoxCondition.SuspendLayout();
             panelInput.SuspendLayout();
             groupBoxInput.SuspendLayout();
@@ -143,8 +144,8 @@
             // groupBoxControl
             // 
             groupBoxControl.Controls.Add(buttonQuestion);
-            groupBoxControl.Controls.Add(button2);
-            groupBoxControl.Controls.Add(button1);
+            groupBoxControl.Controls.Add(buttonDone);
+            groupBoxControl.Controls.Add(buttonSave);
             groupBoxControl.Controls.Add(buttonOpenFile);
             groupBoxControl.Dock = DockStyle.Fill;
             groupBoxControl.Location = new Point(0, 0);
@@ -171,25 +172,29 @@
             buttonQuestion.Click += buttonQuestion_Click;
             buttonQuestion.MouseEnter += buttonQuestion_MouseEnter;
             // 
-            // button2
+            // buttonDone
             // 
-            button2.BackColor = Color.Transparent;
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.Location = new Point(69, 22);
-            button2.Name = "button2";
-            button2.Size = new Size(57, 48);
-            button2.TabIndex = 2;
-            button2.UseVisualStyleBackColor = false;
+            buttonDone.BackColor = Color.Transparent;
+            buttonDone.Enabled = false;
+            buttonDone.Image = (Image)resources.GetObject("buttonDone.Image");
+            buttonDone.Location = new Point(69, 22);
+            buttonDone.Name = "buttonDone";
+            buttonDone.Size = new Size(57, 48);
+            buttonDone.TabIndex = 2;
+            buttonDone.UseVisualStyleBackColor = false;
+            buttonDone.Click += buttonDone_Click;
             // 
-            // button1
+            // buttonSave
             // 
-            button1.BackColor = Color.Transparent;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.Location = new Point(132, 22);
-            button1.Name = "button1";
-            button1.Size = new Size(57, 48);
-            button1.TabIndex = 1;
-            button1.UseVisualStyleBackColor = false;
+            buttonSave.BackColor = Color.Transparent;
+            buttonSave.Enabled = false;
+            buttonSave.Image = (Image)resources.GetObject("buttonSave.Image");
+            buttonSave.Location = new Point(132, 22);
+            buttonSave.Name = "buttonSave";
+            buttonSave.Size = new Size(57, 48);
+            buttonSave.TabIndex = 1;
+            buttonSave.UseVisualStyleBackColor = false;
+            buttonSave.Click += buttonSave_Click;
             // 
             // buttonOpenFile
             // 
@@ -200,10 +205,17 @@
             buttonOpenFile.Size = new Size(57, 48);
             buttonOpenFile.TabIndex = 0;
             buttonOpenFile.UseVisualStyleBackColor = false;
+            buttonOpenFile.Click += buttonOpenFile_Click;
             // 
-            // openFileDialog1
+            // toolTip
             // 
-            openFileDialog1.FileName = "openFileDialog1";
+            toolTip.IsBalloon = true;
+            toolTip.ToolTipTitle = "Подсказка";
+            toolTip.Popup += toolTip_Popup;
+            // 
+            // openFileDialogGet
+            // 
+            openFileDialogGet.FileName = "openFileDialogGet";
             // 
             // panelControl
             // 
@@ -263,10 +275,10 @@
         private GroupBox groupBoxControl;
         private Button buttonOpenFile;
         private Button buttonQuestion;
-        private Button button2;
-        private Button button1;
+        private Button buttonDone;
+        private Button buttonSave;
         private ToolTip toolTip;
-        private OpenFileDialog openFileDialog1;
+        private OpenFileDialog openFileDialogGet;
         private Panel panelControl;
         private Panel panelCondition;
         private Label labelCondition;
@@ -277,5 +289,6 @@
         private Splitter splitter1;
         private DataGridView dataGridViewInput;
         private DataGridView dataGridViewOutput;
+        private SaveFileDialog saveFileDialog1;
     }
 }

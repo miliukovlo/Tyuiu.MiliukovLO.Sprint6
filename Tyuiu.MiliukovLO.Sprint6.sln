@@ -53,6 +53,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.MiliukovLO.Sprint6.Ta
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InputData", "InputData", "{D01CED85-FBA7-42B4-8E60-6E3BE9C5D55A}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\Downloads\InPutDataFileTask7V2.csv = ..\..\..\Downloads\InPutDataFileTask7V2.csv
 		InPutDataTask5V15.txt = InPutDataTask5V15.txt
 		InPutDataTask6V4.txt = InPutDataTask6V4.txt
 	EndProjectSection
