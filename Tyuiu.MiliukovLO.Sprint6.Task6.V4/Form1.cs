@@ -12,7 +12,7 @@ namespace Tyuiu.MiliukovLO.Sprint6.Task6.V4
         string openFilePath;
         DataService ds = new();
         private void buttonLoad_Click(object sender, EventArgs e)
-        { 
+        {
             openFileDialog.ShowDialog();
             openFilePath = openFileDialog.FileName;
             textBoxInput.Text = File.ReadAllText(openFilePath);
@@ -30,6 +30,11 @@ namespace Tyuiu.MiliukovLO.Sprint6.Task6.V4
         private void buttonComplete_Click(object sender, EventArgs e)
         {
             textBoxOut.Text = ds.CollectTextFromFile(openFilePath);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

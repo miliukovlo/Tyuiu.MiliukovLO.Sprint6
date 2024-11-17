@@ -184,6 +184,7 @@
             Controls.Add(groupBoxCondition);
             Name = "Form1";
             Text = "Спринт 6 | Таск 6 | Вариант 4 | ИИПб-24-2 Милюков Л.О.";
+            Load += Form1_Load;
             groupBoxCondition.ResumeLayout(false);
             groupBoxCondition.PerformLayout();
             groupBoxButtons.ResumeLayout(false);
